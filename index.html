@@ -7,10 +7,14 @@
   <title>Document</title>
 </head>
 <body>
+  <h1>Бата</h1>
     <div class="container">
     <div class="image-grid">
   <img class="thumbnail" src="https://sun9-west.userapi.com/sun9-68/s/v1/if1/-KYs9cJSosLTvkogjhifXYonT-9Bp7mc_ZLkzjiqHAdbKOcy2tlXvnJDUPNGlD8D4_uW-AQd.jpg?size=239x315&quality=96&type=album" onclick="openFullScreen(this)">
   <img class="thumbnail" src="https://sun9-east.userapi.com/sun9-19/s/v1/if1/UFOAuJ9ptdLfJsdJR69jCk3QbwXFLlUqIM2E6ewMiaradH1L1EqYPGJOk2tKWU7otkQ7b8rJ.jpg?size=457x600&quality=96&type=album" onclick="openFullScreen(this)">
+        <img class="thumbnail" src="https://sun9-east.userapi.com/sun9-19/s/v1/if1/UFOAuJ9ptdLfJsdJR69jCk3QbwXFLlUqIM2E6ewMiaradH1L1EqYPGJOk2tKWU7otkQ7b8rJ.jpg?size=457x600&quality=96&type=album" onclick="openFullScreen(this)">
+  <h1></h1>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/vHsM-kaBHsE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 </div>
 
@@ -21,9 +25,12 @@
 
   </div>
   <style>
+    *{
+      font-family: sans-serif;
+    }
   img{
   cursor: pointer;
-
+  
 }
 .image-grid .thumbnail {
   width: 290px;
@@ -69,13 +76,14 @@
   font-size: 18px;
   cursor: pointer;
 }
+    
   </style>
   <script>
   function openFullScreen(img) {
   var fullScreenImage = document.getElementById("full-screen-image");
   var closeButton = document.getElementById("close-button");
   var fullScreenContainer = document.querySelector(".full-screen-image-container");
-
+  
   fullScreenImage.src = img.src;
   fullScreenContainer.classList.add("open");
 }
@@ -83,7 +91,7 @@
 function closeFullScreen() {
   var fullScreenImage = document.getElementById("full-screen-image");
   var fullScreenContainer = document.querySelector(".full-screen-image-container");
-
+  
   fullScreenImage.src = "";
   fullScreenContainer.classList.remove("open");
 }
